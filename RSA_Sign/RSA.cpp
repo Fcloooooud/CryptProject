@@ -155,7 +155,6 @@ string RSA::RSA_Decrypt(string CipherText)
 {
 	string PlainText = "";
 
-
 	int FullLen = CipherText.length();
 	int BlockLen = KEYLEN / 8;
 	int BlockNum = FullLen / BlockLen;  // 一定是能整除的
