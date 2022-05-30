@@ -131,7 +131,6 @@ string RSA::RSA_Encrypt(string PlainText)
 		else
 			tmpStr = PlainText.substr(i * BlockLen, BlockLen);
 
-
 		PKCS1_Padding(tmpStr, tmpByteArr);
 	
 		ZZFromBytes(tmpZZ, tmpByteArr, EBLen);
